@@ -3,7 +3,7 @@ package kazaam_test
 import (
 	"testing"
 
-	"github.com/mariotoffia/kazaam"
+	"github.com/mariotoffia/kazaam/v3"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/mariotoffia/kazaam/transform"
+	"github.com/mariotoffia/kazaam/v3/transform"
 	"github.com/qntfy/jsonparser"
 )
 

@@ -3,7 +3,7 @@ package kazaam
 import (
 	"encoding/json"
 
-	"github.com/mariotoffia/kazaam/transform"
+	"github.com/mariotoffia/kazaam/v3/transform"
 )
 
 // Spec represents an individual spec element. It describes the name of the operation,
@@ -18,7 +18,7 @@ type spec struct {
 type specInt spec
 type specs []spec
 
-// UnmarshalJSON implements a custon unmarshaller for the Spec type
+// UnmarshalJSON implements a custom unmarshaler for the Spec type
 func (s *spec) UnmarshalJSON(b []byte) (err error) {
 	j := specInt{}
 	if err = json.Unmarshal(b, &j); err == nil {

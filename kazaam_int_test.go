@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/mariotoffia/kazaam"
-	"github.com/mariotoffia/kazaam/transform"
+	"github.com/mariotoffia/kazaam/v3"
+	"github.com/mariotoffia/kazaam/v3/transform"
 	"github.com/qntfy/jsonparser"
 )
 
@@ -370,13 +370,13 @@ func TestKazaamNoModify(t *testing.T) {
 	}
 }
 
-func TestConfigdKazaamGet3rdPartyTransform(t *testing.T) {
+func TestConfigsKazaamGet3rdPartyTransform(t *testing.T) {
 	kc := kazaam.NewDefaultConfig()
 	kc.RegisterTransform("3rd-party", func(spec *transform.Config, data []byte) ([]byte, error) {
-		data, _ = jsonparser.Set(data, []byte(`"does-exist"`), "doesnt-exist")
+		data, _ = jsonparser.Set(data, []byte(`"does-exist"`), "doesn't-exist")
 		return data, nil
 	})
-	msgOut := `{"test":"data","doesnt-exist":"does-exist"}`
+	msgOut := `{"test":"data","doesn't-exist":"does-exist"}`
 
 	k, _ := kazaam.New(`[{"operation": "3rd-party"}]`, kc)
 	kazaamOut, _ := k.TransformJSONStringToString(`{"test":"data"}`)

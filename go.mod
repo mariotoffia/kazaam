@@ -1,4 +1,4 @@
-module github.com/mariotoffia/kazaam
+module github.com/mariotoffia/kazaam/v3
 
 require (
 	github.com/gofrs/uuid v4.0.0+incompatible
