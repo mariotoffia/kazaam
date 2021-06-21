@@ -3,9 +3,11 @@
 [![Travis Build Status](https://img.shields.io/travis/qntfy/kazaam.svg?branch=master)](https://travis-ci.com/qntfy/kazaam)
 [![Coverage Status](https://coveralls.io/repos/github/qntfy/kazaam/badge.svg?branch=master)](https://coveralls.io/github/qntfy/kazaam?branch=master)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![GitHub release](https://img.shields.io/github/release/qntfy/kazaam.svg?maxAge=3600)](https://github.com/qntfy/kazaam/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/qntfy/kazaam)](https://goreportcard.com/report/github.com/qntfy/kazaam)
-[![GoDoc](https://godoc.org/github.com/qntfy/kazaam?status.svg)](http://godoc.org/gopkg.in/qntfy/kazaam.v3)
+[![GitHub release](https://img.shields.io/github/release/qntfy/kazaam.svg?maxAge=3600)](https://github.com/mariotoffia/kazaam/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mariotoffia/kazaam)](https://goreportcard.com/report/github.com/mariotoffia/kazaam)
+[![GoDoc](https://godoc.org/github.com/mariotoffia/kazaam?status.svg)](http://godoc.org/gopkg.in/qntfy/kazaam.v3)
+
+**NOTE: Use the official version and not this fork, it only adds go.mod for my personal use**
 
 ## Description
 Kazaam was created with the goal of supporting easy and fast transformations of JSON data with Golang.

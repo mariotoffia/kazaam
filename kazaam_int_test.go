@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/mariotoffia/kazaam"
+	"github.com/mariotoffia/kazaam/transform"
 	"github.com/qntfy/jsonparser"
-	"github.com/qntfy/kazaam"
-	"github.com/qntfy/kazaam/transform"
 )
 
 const testJSONInput = `{"rating":{"example":{"value":3},"primary":{"value":3}}}`
